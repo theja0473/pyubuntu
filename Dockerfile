@@ -19,7 +19,7 @@ RUN pyenv global 3.7.0
 RUN pyenv rehash
 
 # install pipenv
-RUN pip install pipenv
+RUN pip install pipenv pyyaml
 
 COPY . /app
 WORKDIR /app
